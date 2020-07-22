@@ -1,0 +1,12 @@
+### get subscribe info by uuid
+GET http://localhost:7001/subscribe/839f187b-1008-4b0a-bc98-f6d28e67a132
+Accept: application/json
+
+### push messege
+POST http://localhost:7001/subscribe/push/839f187b-1008-4b0a-bc98-f6d28e67a132
+Content-Type: application/json
+
+{
+  "uuid": "839f187b-1008-4b0a-bc98-f6d28e67a132",
+  "content": "hello client, this message from server"
+}
